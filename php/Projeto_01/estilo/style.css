@@ -117,6 +117,15 @@ section.descricao-autor p{
     color: #444;
     margin-top: 10px;
 }
+section.especialidades{
+    padding: 20px 0;
+    background: silver;
+}
+section.especialidades h2.title{
+    font-size: 30px;
+    font-weight: 400;
+    color: #999;
+}
 
 @media screen and (max-width:700px){
     nav.desktop{
