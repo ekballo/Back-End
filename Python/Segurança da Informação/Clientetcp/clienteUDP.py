@@ -14,7 +14,7 @@ try:
     print('Cliente:' + mensagem)
     s.sendto(mensagem.encode(), (host,5432))
 
-    dados, servidor = s.recfrom(4096)
+    dados, servidor = s.recvfrom(4096)
     dados = dados.decode()
     print('Cliente:' + dados)
 finally:
