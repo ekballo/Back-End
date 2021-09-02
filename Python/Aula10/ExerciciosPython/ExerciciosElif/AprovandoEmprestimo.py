@@ -1,0 +1,6 @@
+casa = float(input('Valor da Casa: R$'))
+salario= float(input('Salario do Comprador: R$'))
+anos = int(input('Qauntos ano de finacioamento?  '))
+prestação = casa / (anos * 12)
+print('Para pagar uma casa de R${:.2} em {} anos' .format(casa, anos))
+print('A prestação sera de R${:.2}' .format(prestação))
