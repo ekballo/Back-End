@@ -12,3 +12,23 @@
 #- INSS (8%) : R$
 #- Sindicato ( 5%) : R$
 #= Salário Liquido : R
+
+qH = float(input('Quanto você ganha por hora: '))
+hT = float(input('Quantas horas você trabalha ou trabalhou: '))
+
+salárioB = qH * hT
+#print('Salario Liquido recebido é {:.1f}R$'.format(salárioB))
+
+ir = (11/100 * salárioB)
+inss = (8/100 * salárioB)
+sidincato = (5/100 * salárioB)
+
+bruto = ir + inss + sidincato
+salárioL = salárioB - bruto
+
+print('Seu salário bruto é {}R$'.format(salárioL))
+print('Valor dos impostos: '.format(bruto))
+print('IR: '.format(ir))
+print('INSS: '.format(inss))
+print('Sindicato: '.format(sidincato))
+print('Seu salário liquido é {}R$'.format(salárioB))
